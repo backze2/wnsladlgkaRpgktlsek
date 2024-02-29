@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('628ec96cec877a61c4588a09fbce7b88');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: 'LS BOT company',
+        description: '',
+        imageUrl:
+          'https://i.ibb.co/bdGC9tN/cu1709091515821.png',
+        link: {
+          mobileWebUrl: 'https://open.kakao.com/o/guOKnD0f',
+          webUrl: 'https://open.kakao.com/o/guOKnD0f',
+        },
+      },
+      buttons: [
+        {
+          title: '건의방',
+          link: {
+            mobileWebUrl: 'https://open.kakao.com/o/sQBGyJcg',
+            webUrl: 'https://open.kakao.com/o/sQBGyJcg',
+          },
+        },
+      ],
+            buttons: [
+        {
+          title: '은행',
+          link: {
+            mobileWebUrl: 'https://open.kakao.com/o/sfcXyJcg',
+            webUrl: 'https://open.kakao.com/o/sfcXyJcg',
+          },
+        },
+      ],
+            buttons: [
+        {
+          title: '재판장',
+          link: {
+            mobileWebUrl: 'https://open.kakao.com/o/glZYzJcg',
+            webUrl: 'https://open.kakao.com/o/glZYzJcg',
+          },
+        },
+      ],
+                  buttons: [
+        {
+          title: '우체국',
+          link: {
+            mobileWebUrl: 'https://open.kakao.com/o/sBqpAJcg',
+            webUrl: 'https://open.kakao.com/o/sBqpAJcg',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
+</html>
